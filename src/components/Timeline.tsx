@@ -398,7 +398,7 @@ export function Timeline() {
             {/* Fading ghost trail behind vehicle */}
             <div className="absolute top-0 left-0 w-[64px] h-[64px] sm:w-[90px] sm:h-[90px] max-w-[100px] max-h-[100px] opacity-35 blur-[2px] -translate-x-3 pointer-events-none">
               <img
-                src="/corridor-drone.png"
+                src={`${import.meta.env.BASE_URL}corridor-drone.png`}
                 alt=""
                 width={90}
                 height={90}
@@ -408,7 +408,7 @@ export function Timeline() {
 
             {/* Main Recon Drone Image (mix-blend-screen, z-[5] below cards) */}
             <img
-              src="/corridor-drone.png"
+              src={`${import.meta.env.BASE_URL}corridor-drone.png`}
               alt="Corridor Recon Drone"
               width={90}
               height={90}

@@ -62,8 +62,8 @@ export function Protocol() {
 
           {/* High-Resolution Protocol System Image */}
           <img
-            src="/images/protocol-large.png"
-            srcSet="/images/protocol-full.png 900w, /images/protocol-full@2x.png 1400w, /images/protocol-large.png 1920w"
+            src={`${import.meta.env.BASE_URL}images/protocol-large.png`}
+            srcSet={`${import.meta.env.BASE_URL}images/protocol-full.png 900w, ${import.meta.env.BASE_URL}images/protocol-full@2x.png 1400w, ${import.meta.env.BASE_URL}images/protocol-large.png 1920w`}
             sizes="(max-width: 900px) 100vw, (max-width: 1400px) 95vw, 1380px"
             alt="How You'll Be Judged - Evaluation Protocol"
             className="w-full h-auto object-contain block select-none"

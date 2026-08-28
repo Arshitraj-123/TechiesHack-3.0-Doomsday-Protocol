@@ -33,7 +33,7 @@ const VAULTS: VaultData[] = [
     bgColor: "bg-gold/10",
     glowColor: "rgba(232,185,74,0.35)",
     glowShadow: "0 0 25px rgba(232, 185, 74, 0.5), 0 0 50px rgba(232, 185, 74, 0.2)",
-    image: "/cache-1.jpg",
+    image: `${import.meta.env.BASE_URL}cache-1.jpg`,
     title: "Grand Victor Cache",
     description:
       "Cash Prize · E-Certificate · Featured Spotlight — exact value briefed at kickoff",
@@ -49,7 +49,7 @@ const VAULTS: VaultData[] = [
     bgColor: "bg-cyan/10",
     glowColor: "rgba(79,216,232,0.35)",
     glowShadow: "0 0 25px rgba(79, 216, 232, 0.5), 0 0 50px rgba(79, 216, 232, 0.2)",
-    image: "/cache-2.jpg",
+    image: `${import.meta.env.BASE_URL}cache-2.jpg`,
     title: "Vanguard Cache",
     description:
       "Cash Prize · E-Certificate — exact value briefed at kickoff",
@@ -65,7 +65,7 @@ const VAULTS: VaultData[] = [
     bgColor: "bg-crimson/10",
     glowColor: "rgba(232,38,44,0.35)",
     glowShadow: "0 0 25px rgba(232, 38, 44, 0.5), 0 0 50px rgba(232, 38, 44, 0.2)",
-    image: "/cache-3.jpg",
+    image: `${import.meta.env.BASE_URL}cache-3.jpg`,
     title: "Tactical Cache",
     description:
       "Cash Prize · E-Certificate — exact value briefed at kickoff",

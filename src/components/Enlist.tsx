@@ -158,7 +158,7 @@ export function Enlist() {
 
               {/* QR Code Image (Guaranteed min 140px on all mobile viewports) */}
               <img
-                src="/registration-qr.png"
+                src={`${import.meta.env.BASE_URL}registration-qr.png`}
                 alt="Scan to Enlist — Google Form Registration QR Code"
                 width={160}
                 height={160}

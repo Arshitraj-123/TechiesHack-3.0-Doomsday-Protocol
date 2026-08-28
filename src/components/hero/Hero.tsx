@@ -68,7 +68,7 @@ export function Hero() {
       {/* Layer 1 — Full-bleed atmospheric background image (brightness 0.75) */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 1 }}>
         <img
-          src="/hero-bg.jpg"
+          src={`${import.meta.env.BASE_URL}hero-bg.jpg`}
           alt="TechiesHack 3.0 Doomsday Protocol atmospheric scene"
           className="w-full h-full object-cover brightness-[0.75] object-center sm:object-[center_35%]"
           loading="eager"
