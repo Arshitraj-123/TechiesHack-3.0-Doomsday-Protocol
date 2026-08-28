@@ -8,10 +8,11 @@
 [![Vite](https://img.shields.io/badge/Vite-8.2-646CFF?logo=vite&style=flat-square)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css&style=flat-square)](https://tailwindcss.com/)
 [![GSAP 3](https://img.shields.io/badge/GSAP-3.15-88CE02?logo=greensock&style=flat-square)](https://greensock.com/gsap/)
-[![Vercel Ready](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat-square&logo=vercel)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FArshitraj-123%2FTechiesHack-3.0-Doomsday-Protocol)
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=flat-square&logo=github)](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-Live_Production-000000?style=flat-square&logo=vercel)](https://techies-hack-3-0-doomsday-protocol.vercel.app/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live_Mirror-success?style=flat-square&logo=github)](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)
 
-> 🌐 **Live Website URL:** **[https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)**
+> 🚀 **Primary Production URL (Vercel):** **[https://techies-hack-3-0-doomsday-protocol.vercel.app/](https://techies-hack-3-0-doomsday-protocol.vercel.app/)**  
+> 🌐 **Secondary Mirror (GitHub Pages):** **[https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)**
 
 ---
 
@@ -145,28 +146,38 @@
 
 ---
 
-## 🌐 Deployment Options
+## 🌐 Deployment & Production Environments
 
-The project is fully pre-configured to deploy seamlessly to **Vercel** or **GitHub Pages**.
+The application is deployed across two independent, high-availability production environments:
 
-### ▲ Option 1: Deploy to Vercel (Recommended — 1-Click)
+| Environment | Platform | Status | Live URL | Infrastructure & Routing |
+| :--- | :--- | :---: | :--- | :--- |
+| **Primary Production** | **Vercel** | ![Live](https://img.shields.io/badge/Live-000000?style=flat-square&logo=vercel) | **[techies-hack-3-0-doomsday-protocol.vercel.app](https://techies-hack-3-0-doomsday-protocol.vercel.app/)** | Global Edge CDN · Automated CI/CD on `main` · Root SPA rewrites via `vercel.json` |
+| **Secondary Mirror** | **GitHub Pages** | ![Live](https://img.shields.io/badge/Live-success?style=flat-square&logo=github) | **[arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)** | GitHub Global CDN · `gh-pages` branch deployment · Actions CI/CD pipeline |
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FArshitraj-123%2FTechiesHack-3.0-Doomsday-Protocol)
+---
 
-1. Click the button above or visit **[vercel.com/new](https://vercel.com/new)**.
-2. Select **"Import Git Repository"** and choose `TechiesHack-3.0-Doomsday-Protocol`.
-3. Vercel automatically detects Vite with settings from [`vercel.json`](./vercel.json):
-   * **Framework Preset**: `Vite`
-   * **Build Command**: `npm run build`
-   * **Output Directory**: `dist`
-4. Click **Deploy**. Your site will be live instantly with a global edge CDN domain.
+### ▲ Primary Deployment: Vercel
 
-### 🐙 Option 2: GitHub Pages
+* **Production URL**: **[https://techies-hack-3-0-doomsday-protocol.vercel.app/](https://techies-hack-3-0-doomsday-protocol.vercel.app/)**
+* **Configuration**: [`vercel.json`](./vercel.json)
+  * **Framework Preset**: `Vite`
+  * **Build Command**: `npm run build`
+  * **Output Directory**: `dist`
+  * **SPA Fallback Rewrites**: `{"source": "/(.*)", "destination": "/index.html"}` ensuring seamless client-side navigation without 404s on browser reloads.
+* **Continuous Integration**: Connected directly to the GitHub repository. Any commit pushed to the `main` branch automatically triggers an instant, zero-downtime production deployment.
+* **1-Click Deploy New Clone**:
+  
+  [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FArshitraj-123%2FTechiesHack-3.0-Doomsday-Protocol)
 
-* **Live URL**: [https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)
-* **Deployment Branch**: `gh-pages` (root folder)
-* **Automated CI/CD**: Pushing to `main` automatically triggers the GitHub Actions workflow at [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
-* **Manual Redeploy**: Run `npm run deploy` anytime to trigger a fresh production build and push directly to the `gh-pages` branch.
+---
+
+### 🐙 Secondary Mirror: GitHub Pages
+
+* **Mirror URL**: **[https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)**
+* **Deployment Source**: Branch `gh-pages` (root folder)
+* **Automated CI/CD Workflow**: [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml) automatically compiles and deploys upon pushes to `main`.
+* **Manual Command**: Run `npm run deploy` to rebuild and push the compiled bundle directly to the `gh-pages` branch.
 
 ---
 
