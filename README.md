@@ -8,6 +8,7 @@
 [![Vite](https://img.shields.io/badge/Vite-8.2-646CFF?logo=vite&style=flat-square)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css&style=flat-square)](https://tailwindcss.com/)
 [![GSAP 3](https://img.shields.io/badge/GSAP-3.15-88CE02?logo=greensock&style=flat-square)](https://greensock.com/gsap/)
+[![Vercel Ready](https://img.shields.io/badge/Deploy-Vercel-000000?style=flat-square&logo=vercel)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FArshitraj-123%2FTechiesHack-3.0-Doomsday-Protocol)
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=flat-square&logo=github)](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)
 
 > 🌐 **Live Website URL:** **[https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)**
@@ -144,9 +145,23 @@
 
 ---
 
-## 🌐 Deployment (GitHub Pages)
+## 🌐 Deployment Options
 
-The project is configured for automated continuous deployment to **GitHub Pages**:
+The project is fully pre-configured to deploy seamlessly to **Vercel** or **GitHub Pages**.
+
+### ▲ Option 1: Deploy to Vercel (Recommended — 1-Click)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FArshitraj-123%2FTechiesHack-3.0-Doomsday-Protocol)
+
+1. Click the button above or visit **[vercel.com/new](https://vercel.com/new)**.
+2. Select **"Import Git Repository"** and choose `TechiesHack-3.0-Doomsday-Protocol`.
+3. Vercel automatically detects Vite with settings from [`vercel.json`](./vercel.json):
+   * **Framework Preset**: `Vite`
+   * **Build Command**: `npm run build`
+   * **Output Directory**: `dist`
+4. Click **Deploy**. Your site will be live instantly with a global edge CDN domain.
+
+### 🐙 Option 2: GitHub Pages
 
 * **Live URL**: [https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)
 * **Deployment Branch**: `gh-pages` (root folder)
