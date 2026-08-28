@@ -8,7 +8,9 @@
 [![Vite](https://img.shields.io/badge/Vite-8.2-646CFF?logo=vite&style=flat-square)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC?logo=tailwind-css&style=flat-square)](https://tailwindcss.com/)
 [![GSAP 3](https://img.shields.io/badge/GSAP-3.15-88CE02?logo=greensock&style=flat-square)](https://greensock.com/gsap/)
-[![Status](https://img.shields.io/badge/Status-Battle--Ready-crimson?style=flat-square)](#)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-success?style=flat-square&logo=github)](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)
+
+> 🌐 **Live Website URL:** **[https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)**
 
 ---
 
@@ -130,10 +132,26 @@
    npm run build
    ```
 
-5. **Run the linter**:
+5. **Deploy to GitHub Pages**:
+   ```bash
+   npm run deploy
+   ```
+
+6. **Run the linter**:
    ```bash
    npm run lint
    ```
+
+---
+
+## 🌐 Deployment (GitHub Pages)
+
+The project is configured for automated continuous deployment to **GitHub Pages**:
+
+* **Live URL**: [https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/](https://arshitraj-123.github.io/TechiesHack-3.0-Doomsday-Protocol/)
+* **Deployment Branch**: `gh-pages` (root folder)
+* **Automated CI/CD**: Pushing to `main` automatically triggers the GitHub Actions workflow at [`.github/workflows/deploy.yml`](./.github/workflows/deploy.yml).
+* **Manual Redeploy**: Run `npm run deploy` anytime to trigger a fresh production build and push directly to the `gh-pages` branch.
 
 ---
 
