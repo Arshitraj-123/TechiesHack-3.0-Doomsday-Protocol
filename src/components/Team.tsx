@@ -97,10 +97,10 @@ function MemberCard({ member, index, accentColor = "#E8B94A" }: MemberCardProps)
       {/* ── Info & Role Title ──────────────────────────────────── */}
       <div className="mt-4 flex flex-col">
         <h4 className="font-tech text-base sm:text-lg font-bold uppercase tracking-wide text-ink group-hover:text-gold transition-colors">
-          {member.role}
-        </h4>
-        <span className="font-mono text-xs text-ink-faint mt-0.5 tracking-wider">
           {member.name || "Name Placeholder"}
+        </h4>
+        <span className="font-mono text-xs text-ink-dim/80 mt-0.5 tracking-wider">
+          {member.role}
         </span>
       </div>
     </motion.div>

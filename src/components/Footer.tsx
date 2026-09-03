@@ -170,8 +170,11 @@ export function Footer() {
           </div>
 
           {/* Built by */}
-          <div className="font-mono text-[11px] text-ink-faint/70 mt-2">
-            Built by <span className="text-ink-dim font-semibold">Arshit Raj</span>
+          <div className="font-mono text-xs tracking-wider text-ink mt-1 flex items-center justify-center gap-2">
+            <span className="text-ink-dim">Built by</span>
+            <span className="font-tech font-bold text-sm sm:text-base tracking-[0.18em] uppercase text-gold bg-gold/10 border border-gold/40 px-2.5 py-0.5 rounded shadow-[0_0_12px_rgba(232,185,74,0.25)]">
+              Arshit Raj
+            </span>
           </div>
         </div>
       </div>
