@@ -2,10 +2,10 @@ import react from "@vitejs/plugin-react";
 import path from "path";
 import { defineConfig } from "vite";
 
-// Automatically detect Vercel vs GitHub Pages vs Local Development
-const isVercel = Boolean(process.env.VERCEL);
-const isProd = process.env.NODE_ENV === "production";
-const base = isVercel ? "/" : (isProd ? "/TechiesHack-3.0-Doomsday-Protocol/" : "/");
+// Default base to "/" for custom domain (Hostinger), Vercel, and local development.
+// Only use GitHub repo subpath if GITHUB_PAGES env flag is set.
+const isGithubPages = process.env.GITHUB_PAGES === "true";
+const base = isGithubPages ? "/TechiesHack-3.0-Doomsday-Protocol/" : "/";
 
 // https://vite.dev/config/
 export default defineConfig({
