@@ -3,7 +3,7 @@ import { HeroParticles } from "./HeroParticles";
 
 /* ── Constants ──────────────────────────────────────────────── */
 
-const TARGET_DATE = new Date("2026-09-05T11:00:00+05:30");
+const TARGET_DATE = new Date("2026-09-26T11:00:00+05:30");
 
 /* ── Countdown hook ─────────────────────────────────────────── */
 

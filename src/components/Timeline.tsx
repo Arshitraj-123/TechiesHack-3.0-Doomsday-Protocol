@@ -97,7 +97,7 @@ const PHASES: Phase[] = [
         title: "CODE FREEZE & DEMO SUBMISSION",
         subtitle: "Repositories Locked · Video Pitch Due",
         description:
-          "All commits pushed to production repositories. Demo videos, pitch slide decks, and live deployment URLs locked for evaluation.",
+          "All commits pushed to production repositories. Submit via the official GitHub repo submission form and provide a live/deployed project link (Vercel/Netlify/Render/etc.). Demo videos and pitch slide decks locked for evaluation. Submissions missing either link are incomplete.",
         tags: ["Code Freeze", "Submission", "Video Pitch"],
         color: "cyan",
       },

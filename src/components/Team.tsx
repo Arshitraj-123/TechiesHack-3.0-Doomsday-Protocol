@@ -13,17 +13,17 @@ interface TeamMember {
 }
 
 const CORE_PATRONS: TeamMember[] = [
-  { id: "cp-1", role: "Event Lead", name: "Name Placeholder", src: "" },
-  { id: "cp-2", role: "Design Lead", name: "Name Placeholder", src: "" },
-  { id: "cp-3", role: "Tech Lead", name: "Name Placeholder", src: "" },
-  { id: "cp-4", role: "Outreach Lead", name: "Name Placeholder", src: "" },
+  { id: "cp-1", role: "Chief Technical Officer", name: "Bhanu Pratap Singh", src: "team-bhanu.jpg" },
+  { id: "cp-2", role: "Data Engineer", name: "Umang Vashishtha", src: "team-umang.jpg" },
+  { id: "cp-3", role: "Engineering Head", name: "Neha Vats", src: "team-neha.jpg" },
+  { id: "cp-4", role: "Senior Consultant", name: "Sushmita Patra", src: "team-sushmita.jpg" },
 ];
 
 const ORGANIZING_COMMITTEE: TeamMember[] = [
-  { id: "oc-1", role: "Logistics Lead", name: "Name Placeholder", src: "" },
-  { id: "oc-2", role: "Sponsorship Lead", name: "Name Placeholder", src: "" },
-  { id: "oc-3", role: "Content Lead", name: "Name Placeholder", src: "" },
-  { id: "oc-4", role: "Social Media Lead", name: "Name Placeholder", src: "" },
+  { id: "oc-1", role: "Full Stack Developer", name: "Yash", src: "team-yash.jpg" },
+  { id: "oc-2", role: "Front End Developer", name: "Zeeshan", src: "team-zeeshan.jpg" },
+  { id: "oc-3", role: "Full Stack Developer", name: "Arshit Raj", src: "team-arshit.png" },
+  { id: "oc-4", role: "Front End Developer", name: "Surya", src: "team-surya.jpg" },
 ];
 
 /* ── Member Card Component ──────────────────────────────────── */
@@ -60,7 +60,7 @@ function MemberCard({ member, index, accentColor = "#E8B94A" }: MemberCardProps)
       <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-line bg-gradient-to-b from-panel via-panel-2 to-[#090B11] flex items-center justify-center group-hover:border-line/80 transition-colors">
         {hasPhoto ? (
           <img
-            src={member.src}
+            src={`${import.meta.env.BASE_URL}${member.src}`}
             alt={`${member.role} — ${member.name ?? "Placeholder"}`}
             onError={() => setImgError(true)}
             className="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500"
@@ -123,7 +123,7 @@ export function Team() {
         <SectionHeading
           eyebrow="Sector 06 // Command Center"
           title="The team behind the mission"
-          description="Placeholder roster — real photos added closer to launch."
+          description="The operational leadership driving TechiesHack 3.0 forward."
         />
 
         {/* ── GROUP 1: Core Patrons ───────────────────────────── */}
@@ -173,7 +173,7 @@ export function Team() {
           <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-line/60 bg-panel-2/60 shadow-lg">
             <span className="w-1.5 h-1.5 rounded-full bg-gold animate-pulse" />
             <span className="font-mono text-xs uppercase tracking-wider text-ink-faint">
-              Placeholder roster — swap in real photos and names before launch.
+              Codways Technologies · Core Operations Team
             </span>
           </div>
         </div>

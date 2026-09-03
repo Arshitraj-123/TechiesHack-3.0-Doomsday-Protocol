@@ -18,7 +18,7 @@ export function Briefing() {
         <SectionHeading
           eyebrow="Sector 01 // Mission Briefing"
           title="The world doesn't wait. Neither should you."
-          description="TechiesHack 3.0 is an intense 24-hour online hackathon hosted by Codways Technologies on September 5–6, 2026. Operatives from across all college years and disciplines gather to engineer high-impact solutions for critical global directives before time runs out."
+          description="TechiesHack 3.0 is an intense 24-hour online hackathon hosted by Codways Technologies on September 26–27, 2026. Operatives from across all college years and disciplines gather to engineer high-impact solutions for critical global directives before time runs out."
           centered
         />
 

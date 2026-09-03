@@ -114,6 +114,25 @@ export function Footer() {
                   <span>info@codways.com</span>
                 </a>
               </li>
+              <li>
+                <a
+                  href="tel:+919891877741"
+                  className="hover:text-gold inline-flex items-center gap-1 transition-colors font-mono text-xs"
+                >
+                  <span>+91 9891877741</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.codways.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold inline-flex items-center gap-1 transition-colors font-mono text-xs"
+                >
+                  <span>www.codways.com</span>
+                  <ArrowUpRight className="w-3 h-3 opacity-60" />
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -127,20 +146,19 @@ export function Footer() {
                 <span className="font-tech text-xs font-bold uppercase text-ink">
                   Reg. Closes
                 </span>
-                <span className="font-mono text-xs text-gold">31 Aug 2026</span>
+                <span className="font-mono text-xs text-gold">15 Sept 2026</span>
               </li>
               <li className="flex flex-col">
                 <span className="font-tech text-xs font-bold uppercase text-ink">
                   Hackathon
                 </span>
-                <span className="font-mono text-xs text-crimson">5–6 Sept 2026</span>
+                <span className="font-mono text-xs text-crimson">26–27 Sept 2026</span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* ── Bottom Bar ───────────────────────────────────────── */}
-        <div className="pt-8 sm:pt-10 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+        <div className="pt-8 sm:pt-10 flex flex-col items-center gap-4 text-center">
           {/* Copyright */}
           <div className="font-mono text-xs text-ink-faint">
             © 2026 TechiesHack · Codways Technologies. All rights reserved.
@@ -149,6 +167,11 @@ export function Footer() {
           {/* Tagline */}
           <div className="font-tech text-xs tracking-[0.25em] uppercase text-gold font-bold select-none">
             Build · Innovate · Solve
+          </div>
+
+          {/* Built by */}
+          <div className="font-mono text-[11px] text-ink-faint/70 mt-2">
+            Built by <span className="text-ink-dim font-semibold">Arshit Raj</span>
           </div>
         </div>
       </div>

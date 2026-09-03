@@ -41,13 +41,17 @@ export function Comms() {
     mode: "onBlur",
   });
 
-  const onSubmit = async (_data: CommsFormData) => {
+  const onSubmit = async (data: CommsFormData) => {
     setIsSubmitting(true);
-    // Simulate network transmission delay (~800ms)
-    await new Promise((resolve) => setTimeout(resolve, 800));
+    // Build mailto link with form data
+    const subject = encodeURIComponent(`[TechiesHack 3.0] Message from ${data.name}`);
+    const body = encodeURIComponent(`Name: ${data.name}\nEmail: ${data.email}\n\n${data.message}`);
+    window.open(`mailto:info@codways.com?subject=${subject}&body=${body}`, '_self');
+    // Short delay for UX feedback before resetting
+    await new Promise((resolve) => setTimeout(resolve, 500));
     setIsSubmitting(false);
     reset();
-    toast.success("Transmission received. We'll respond shortly.");
+    toast.success("Email client opened. Send your transmission!");
   };
 
   return (
@@ -171,8 +175,16 @@ export function Comms() {
                   Core operational leadership, institutional partnerships, and
                   central technical administration nerve center.
                 </p>
-                <div className="mt-3 font-mono text-[11px] text-ink-faint">
-                  Patna, Bihar · info@codways.com
+                <div className="mt-3 space-y-1">
+                  <div className="font-mono text-[11px] text-ink-faint">
+                    Off. H1A/5&amp;6, B-40, Globus-D Tower, Sector-63, Noida (U.P)-201301
+                  </div>
+                  <div className="font-mono text-[11px] text-ink-faint">
+                    info@codways.com · +91 9891877741 ·{" "}
+                    <a href="https://www.codways.com" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
+                      www.codways.com
+                    </a>
+                  </div>
                 </div>
               </div>
             </motion.div>

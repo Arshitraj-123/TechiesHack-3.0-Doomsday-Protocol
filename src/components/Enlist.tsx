@@ -6,7 +6,7 @@ import { REGISTRATION_FORM_URL, WHATSAPP_GROUP_URL } from "@/constants/links";
 
 const INFO_PILLS = [
   { label: "Entry Fee", value: "₹200" },
-  { label: "Closes", value: "31 Aug 2026" },
+  { label: "Closes", value: "15 Sept 2026" },
   { label: "Mode", value: "100% Online" },
 ] as const;
 

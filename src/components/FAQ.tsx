@@ -98,6 +98,22 @@ const FAQ_ITEMS: FAQItem[] = [
       </p>
     ),
   },
+  {
+    id: "item-7",
+    numeral: "VII",
+    question: "What is the submission format?",
+    answer: (
+      <p>
+        Every team must submit <span className="text-gold font-semibold">two mandatory links</span> via
+        the official GitHub repo submission form:{" "}
+        <span className="text-gold font-semibold font-mono">1) GitHub repository link</span> and{" "}
+        <span className="text-gold font-semibold font-mono">2) a live/deployed project link</span>{" "}
+        (Vercel, Netlify, Render, or equivalent). Submissions missing either link will be
+        considered <span className="text-crimson font-semibold">incomplete</span> and will not
+        proceed to evaluation.
+      </p>
+    ),
+  },
 ];
 
 /* ── FAQ Component ──────────────────────────────────────────── */
