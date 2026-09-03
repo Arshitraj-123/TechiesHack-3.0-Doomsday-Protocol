@@ -13,16 +13,16 @@ interface TeamMember {
 }
 
 const CORE_PATRONS: TeamMember[] = [
-  { id: "cp-1", role: "Chief Technical Officer", name: "Bhanu Pratap Singh", src: "team-bhanu.jpg" },
-  { id: "cp-2", role: "Data Engineer", name: "Umang Vashishtha", src: "team-umang.jpg" },
-  { id: "cp-3", role: "Engineering Head", name: "Neha Vats", src: "team-neha.jpg" },
-  { id: "cp-4", role: "Senior Consultant", name: "Sushmita Patra", src: "team-sushmita.jpg" },
+  { id: "cp-1", role: "Engineering Head", name: "Neha Vats", src: "team-neha.jpg" },
+  { id: "cp-2", role: "Chief Technical Officer", name: "Bhanu Pratap Singh", src: "team-bhanu.jpg" },
+  { id: "cp-3", role: "Senior Consultant", name: "Sushmita Patra", src: "team-sushmita.jpg" },
+  { id: "cp-4", role: "Data Engineer", name: "Umang Vashishtha", src: "team-umang.jpg" },
 ];
 
 const ORGANIZING_COMMITTEE: TeamMember[] = [
-  { id: "oc-1", role: "Full Stack Developer", name: "Yash", src: "team-yash.jpg" },
-  { id: "oc-2", role: "Front End Developer", name: "Zeeshan", src: "team-zeeshan.jpg" },
-  { id: "oc-3", role: "Full Stack Developer", name: "Arshit Raj", src: "team-arshit.png" },
+  { id: "oc-1", role: "Full Stack Developer", name: "Arshit Raj", src: "team-arshit.png" },
+  { id: "oc-2", role: "Full Stack Developer", name: "Yash", src: "team-yash.jpg" },
+  { id: "oc-3", role: "Front End Developer", name: "Zeeshan", src: "team-zeeshan.jpg" },
   { id: "oc-4", role: "Front End Developer", name: "Surya", src: "team-surya.jpg" },
 ];
 
