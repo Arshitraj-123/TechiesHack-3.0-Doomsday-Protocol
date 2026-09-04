@@ -20,10 +20,10 @@ const CORE_PATRONS: TeamMember[] = [
 ];
 
 const ORGANIZING_COMMITTEE: TeamMember[] = [
-  { id: "oc-1", role: "Full Stack Developer", name: "Arshit Raj", src: "team-arshit.png" },
-  { id: "oc-2", role: "Full Stack Developer", name: "Yash", src: "team-yash.jpg" },
-  { id: "oc-3", role: "Front End Developer", name: "Zeeshan", src: "team-zeeshan.jpg" },
-  { id: "oc-4", role: "Front End Developer", name: "Surya", src: "team-surya.jpg" },
+  { id: "oc-1", role: "IT Manager", name: "Zeeshan", src: "team-zeeshan.jpg" },
+  { id: "oc-2", role: "Full Stack Developer", name: "Arshit Raj", src: "team-arshit.png" },
+  { id: "oc-3", role: "Full Stack Developer", name: "Yash", src: "team-yash.jpg" },
+  { id: "oc-4", role: "Program Manager", name: "Surya", src: "team-surya.jpg" },
 ];
 
 /* ── Member Card Component ──────────────────────────────────── */
