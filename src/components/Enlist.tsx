@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from "motion/react";
-import { ArrowRight, MessageCircle } from "lucide-react";
-import { REGISTRATION_FORM_URL, WHATSAPP_GROUP_URL } from "@/constants/links";
+import { ArrowRight } from "lucide-react";
+import { REGISTRATION_FORM_URL } from "@/constants/links";
 
 /* ── Enlist Info Pills ──────────────────────────────────────── */
 
@@ -107,13 +107,13 @@ export function Enlist() {
           ))}
         </motion.div>
 
-        {/* ── Two CTA Buttons ─────────────────────────────────── */}
+        {/* ── Enlist CTA Button ─────────────────────────────────── */}
         <motion.div
           initial={shouldReduceMotion ? false : { opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: shouldReduceMotion ? 0 : 0.5, delay: 0.32 }}
-          className="mt-10 sm:mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto"
+          className="mt-10 sm:mt-12 flex items-center justify-center w-full sm:w-auto"
         >
           <a
             href={REGISTRATION_FORM_URL}
@@ -123,16 +123,6 @@ export function Enlist() {
           >
             <span>Enlist Your Squad</span>
             <ArrowRight className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" />
-          </a>
-
-          <a
-            href={WHATSAPP_GROUP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost w-full sm:w-auto text-center"
-          >
-            <MessageCircle className="w-4 h-4 text-emerald-400" />
-            <span>Join WhatsApp Group</span>
           </a>
         </motion.div>
 
